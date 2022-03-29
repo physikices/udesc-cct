@@ -154,7 +154,7 @@ ASSETS
     margin-bottom: 2.2rem;   
 }
 
-.cards .title-folder img {
+.cards .title-folder svg {
     margin-right: 1.6rem;
 }
 
@@ -175,7 +175,7 @@ ASSETS
     align-items: center;
 }
 
-.badge-1 img {
+.badge-1 svg {
     margin-right: 1rem;
 }
 
