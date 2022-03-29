@@ -44,6 +44,7 @@
 # latexrun
 latex.out/
 bibliografia/
+no-publish/
 
 ## Auxiliary and intermediate files from other packages:
 # algorithms

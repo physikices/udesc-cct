@@ -1,0 +1,53 @@
+\documentclass[12pt,openright,oneside,a4paper,english,brazil]{abntex2}
+\selectlanguage{brazil}
+
+\include{config/pacotes.tex}
+\include{config/dados.tex}
+
+\begin{document}
+ %%%% -------------------------------------------------
+ %%%% ELEMENTOS Externos 
+ %%%%  -------------------------------------------------
+     \include{elementos/00-capa/capa.tex}
+     %\includepdf[pages=-]{documentacao.pdf}
+ %%%%  -------------------------------------------------
+ %%%% 
+ %%%%  -------------------------------------------------
+ %%%%  ELEMENTOS PRÉ-Textuais
+ %%%%  -------------------------------------------------
+     \include{elementos/01-pre_textual/01-folha_de_rosto.tex}
+     %\include{elementos/01-pre_textual/02-errata.tex}
+     %\include{elementos/01-pre_textual/03-folha_de_aprovacao.tex}
+     %\include{elementos/01-pre_textual/04-dedicatoria.tex}
+     %\include{elementos/01-pre_textual/05-agradecimentos.tex}
+     %\include{elementos/01-pre_textual/06-epigrafe.tex}
+     \include{elementos/01-pre_textual/07-resumo.tex}
+     %\include{elementos/01-pre_textual/08-absract.tex}
+     \include{elementos/01-pre_textual/09-listas.tex}
+     \include{elementos/01-pre_textual/10-sumario.tex}
+ %%%%  -------------------------------------------------
+ %%%% 
+ %%%%  -------------------------------------------------
+ %%%%  ELEMENTOS Textuais
+ %%%%  -------------------------------------------------
+     \include{elementos/02-textual/capitulos/01-introducao.tex}
+     %\include{elementos/02-textual/capitulos/02-apresentacao.tex}
+     %\include{elementos/02-textual/capitulos/03-apoio.tex}
+     %\include{elementos/02-textual/capitulos/04-programasFISICA.tex}
+     %\include{elementos/02-textual/capitulos/05-acompanhamento.tex}
+     %\include{elementos/02-textual/capitulos/06-docencia.tex}
+     %\include{elementos/02-textual/capitulos/07-reunioes.tex}
+     %\include{elementos/02-textual/capitulos/08-consideracoes.tex}
+     
+ %%%%  -------------------------------------------------
+ %%%% 
+ %%%%  -------------------------------------------------
+ %%%%  ELEMENTOS PÓS-Textuais
+ %%%%  -------------------------------------------------
+     \bibliography{elementos/03-pos_textual/01-referencias.bib}
+     %\include{elementos/03-pos_textual/02-glossario.tex}
+     %\include{elementos/03-pos_textual/03-apendice.tex}
+     %\include{elementos/03-pos_textual/04-anexo.tex}
+     %\include{elementos/03-pos_textual/05-indice_remissivo.tex}
+ %%%%  -------------------------------------------------    
+\end{document}
