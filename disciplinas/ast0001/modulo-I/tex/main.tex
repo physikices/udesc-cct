@@ -1,8 +1,8 @@
-\documentclass[12pt, openright, oneside, a4paper, english, brazil]{abntex2}
+\documentclass[12pt,openright,oneside,a4paper,english,brazil]{abntex2}
 \selectlanguage{brazil}
 
-\include{config/pacotes}
-\include{config/dados}
+\include{config/pacotes.tex}
+\include{config/dados.tex}
 % ------------------------------------
 
 
@@ -10,23 +10,14 @@
 % ------------------------------------
 % SUMARIO
 % ------------------------------------
-%\pdfbookmark[0]{\contentsname}{toc}
-%\tableofcontents*
-%\cleardoublepage
-% ------------------------------------
-% CABEÇALHO DE PÁGINA
-% ------------------------------------
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{Página \thepage}
-\lhead{\rightmark}
+\include{config/sumario.tex}
 % ------------------------------------
 % ARQUIVOS
 % ------------------------------------
 %Arquivo 1- Questões
-\include{textos/corpo}
-%Arquivo 2- Descomentar se houver algum
-%\include{}
+%\include{textos/corpo}
+%Arquivo 2- Questões p/ entregar
+\include{textos/mod-I_qRODRIGO.tex}
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
 % ----------------------------------------------------------

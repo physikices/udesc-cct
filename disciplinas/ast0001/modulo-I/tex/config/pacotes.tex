@@ -25,11 +25,11 @@
 
 %==========|GRAFICOS|====================================================================>
 \usepackage{graphicx}			    % inclusão de gráficos
-
+%\usepackage{float}
+%\usepackage{svg}
 %----------|Cores|=======================================================================>
 \usepackage{color}				    % controle de cores
 \usepackage[table]{xcolor}			% tabelas coloridas
-
 \definecolor{color_200_200_200}{RGB}{200,200,200}
 \definecolor{blue}{RGB}{41,5,195}
 %==========|FIM-GRAFICOS|================================================================>
@@ -75,10 +75,11 @@
 \renewcommand{\cftquadroname}{\quadroname\space} 
 \renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
 \setfloatlocations{quadro}{hbtp}
+\newcommand{\degree}[2]{\ensuremath{#1^{\circ}#2}}
 
 %----------|Exercicios|------------------------------------------------------------------>
 \theoremstyle{definition}
-\newtheorem{xca}{Problema}
+\newtheorem{xca}{Questão}
 \newenvironment{prob}{%
 \par\noindent \begin{xca}}%
 {\end{xca}\noindent\rule{\textwidth}{1pt}}
@@ -95,4 +96,5 @@
 %----------|Ajustes|--------------------------------------------------------------------->
 \setlength{\parindent}{1.3cm}		% tamanho do parágrafo
 \setlength{\parskip}{0.2cm} 			% espaçamento entre paragrafos (\onelineskip)
+\setlength{\headheight}{16pt}
 %==========|FIM-AMBIENTES|===============================================================>

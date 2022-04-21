@@ -1,0 +1,47 @@
+\thispagestyle{empty}
+\center
+\begin{minipage}[!]{\linewidth}
+	\begin{minipage}[!]{.19\linewidth}
+		\includegraphics[width=\textwidth]{img/Marca Joinville Vertical RGB-01.jpg}				
+	\end{minipage}
+	\begin{minipage}[!]{.8\linewidth}
+		\center
+		\textsf{
+			\large{
+				\instituicao \\ \vspace{0.1cm}
+				\centro \\ \vspace{0.17cm}
+				\departamento
+				%\disciplina
+			}	
+		}		
+	\end{minipage}
+	\center
+	\rule{\textwidth}{1pt}	
+	\textsc{\autor} \\
+	\today \\ 
+	\rule{\textwidth}{1pt}	
+\end{minipage}
+%\vspace{1cm}
+\begin{center}
+   \textbf{\titulo}\\   
+   \rule{.3\textwidth}{0.1pt}\\     
+\end{center}
+\vspace{12pt}
+\subtitulo\\
+\vspace{36pt} 
+\renewcommand{\thesection}{\Roman{section}}
+
+% ------------------------------------
+% SUMARIO
+% ------------------------------------
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+% ------------------------------------
+% CABEÇALHO DE PÁGINA
+% ------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Página \thepage}
+\lhead{\rightmark}

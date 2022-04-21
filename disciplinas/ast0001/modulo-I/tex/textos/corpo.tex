@@ -130,13 +130,35 @@
 		\item Com base nos valores atualmente conhecidos, $d_{S}/d_{L}\sim 389$. Determine o valor atual de $\theta$ e argumente porque o método de Aristarco não produz um bom resultado.
 	\end{enumerate}
 \end{prob}
+
+\begin{sol}
+	\textcolor{teal} {
+		\begin{enumerate}[label=\alph *)]
+			\item Dado que
+			\begin{align}
+				\cos \theta&=\frac{d_L}{d_S} \nonumber \\
+				\sec \theta&=\frac{d_S}{d_L}
+			\end{align}
+			logo, a estimativa de Aristarco para a razão $d_S/d_L$ é simplesmente
+			\begin{align}
+				\frac{d_S}{d_L}&=\sec 89^{\circ}=19,1
+			\end{align}
+			\item Para os valores atuais tem-se
+			\begin{align}
+				\sec \theta&=389 \nonumber \\
+				\theta&=\sec^{-1}389\approx 89,9^{\circ}				
+			\end{align}
+			Ainda que o ângulo obtido por Aristarco difere cerca de $3^{\circ}$ do valor de ângulo atual, a razão para $d_S/d_L$ encontrada por Aristarco é da ordem de 20 vezes menor que os resultados atuais, isso de fato deve requerer um instrumento de medida de ângulos altamente preciso, o que evidentemente não existia naquela época, um outro ponto a se destacar é que a execução deste experimento requer alto grau de acurácia do experimentador para identificar o momento exato em que a metade da lua está completamente iluminada, um dia antes ou depois da observação pode alterar minimamente o valor de ângulo observado produzindo assim, alta discrepância na razão $d_S/d_L$. Por fim, há ainda de se considerar se Aristarco conhecia os trabalhos de Eratóstenes no que diz respeito a medida do raio da terra, visto que supostamente a medida de ângulo obtida por ele, foi realizada na superfíce do planeta e não em seu centro, como inlustra a figura do exercício, medidas mais atuais \cite{BERTUOLA2016} apontam para uma diferença de $0^{\circ}3^{\prime }0^{\prime \prime}$, diferença pequena mas que pode contribuir para uma melhor aproximação.
+		\end{enumerate}
+	}
+\end{sol}
 %--------------| Q06 |---------------------------------------->
 \begin{prob}
 	Deduza a forma que a latitude de um observador se relaciona com a altura do polo elevado.
 \end{prob}
 \begin{sol}
 	\textcolor{teal} {
-		Os autores \cite{ASTRN&ASTRFIS:2004} definem, a latitude geográfica como sendo o ângulo $\phi$ medido ao longo do meridiano local, com origem no equador $E$ e extremidade no zênite local $z_{O}$.\\				
+		\cite{ASTRN&ASTRFIS:2004} definem, a latitude geográfica como sendo o ângulo $\phi$ medido ao longo do meridiano local, com origem no equador $E$ e extremidade no zênite local $z_{O}$.\\				
 		A figura \eqref{fig:angulos-coordGeo}, representa um observador localizado no ponto $O$ do planeta (circunferência), e de latitude $\phi$. O zênite do observador está representado pelo segmento de reta $z_{O}$ e o seu horizonte pelo segmento de reta $h_O$. Um dos pólos do planeta é representado pela segmento de reta $P$, perpendicular ao equador $E$. Por fim, obtêm-se a reta auxiliar $g$ transladando $h_O$ paralelarmente até o centro $C$ da circunferência. Deseja-se demostrar que o ângulo $\beta$, denominado altura do pólo elevado $h_P$, é essencialmente igual a latitude local $\phi$ do observador.	
 		\begin{figure}[!ht]
 			\centering
@@ -178,7 +200,7 @@
 
 \begin{sol}
 	\textcolor{teal} {
-		Cículos diurnos são sempre paralelos ao equador celeste, neste caso o horizonte encontra-se a um ângulo de $50^{\circ}$ com o equador e portanto:
+		Círculos diurnos são sempre paralelos ao equador celeste, neste caso o horizonte encontra-se a um ângulo de $50^{\circ}$ com o equador e portanto:
 		\begin{enumerate}[label=\alph *)]
 			\item A latitude do local pode ser calculada pelo ângulo de declinação, sendo $\delta=90^{\circ}-50^{\circ}$ ou seja $\delta=\phi=40^{\circ}$
 			\item Sul é o pólo elevado e por definição $h_p=\phi=40^{\circ}$
@@ -252,11 +274,49 @@
 		\end{tabular}
 		\end{table}
 \end{prob}
-\newpage
+
+\begin{sol}
+	\textcolor{teal} {
+		\begin{enumerate}[label=\alph *)]
+			\item No Sistema Equatorial, pertencem ao hemisfério sul as estrelas cujo ângulo de declinação $\delta<0$, sendo assim:  \textbf{Sírius ($\alpha$-Cão Maior), Canopus ($\alpha$-carina), Antares ($\alpha$-Escorpião), Acrux ($\alpha$-Crucis), Spica ($\alpha$-Virgem), Rigelkent ($\alpha$-Centauri) e Rigel ($\beta$-Orionis)}.
+			\item  Para que uma estrela seja invisível num ponto do hemisfério norte de latitude $\phi$, basta que ela seja circumpolar a uma latitude $-\phi$ do hemisfério sul. A condição para ocorrência de circumpolaridade é dada por 
+			\begin{align}
+				\left|\delta\right|\geq \degree{90}{}-\left|\phi\right|
+			\end{align}
+			sendo $\delta$ e $\phi$ de sinais iguais, do contrário, a estrela é circumpolar no hemisfério oposto. Então, em Oslo ($\phi$=\degree{+59}{}) qualquer estrela com ângulo de declinação
+			\begin{align}
+				\left|-\delta\right|&\geq \degree{90}{}-\left|+\degree{59}{}\right| \nonumber \\
+				\delta &\leq -\degree{31}{}
+			\end{align}
+			será invisível. Logo: \textbf{Canopus ($\alpha$-Carina); Rigelkent ($\alpha$-Centauri) e Acrux ($\alpha$-Crucis)} não são visíveis neste local.
+			\item Em Porto Alegre, as estrelas que serão circumpolares, deverão ter para a coordenada do ângulo de declinção $\delta$ a seguinte relação
+			\begin{align}
+				\left|-\delta\right|&\geq\degree{90}{}-\left|-\degree{30}{}\right|\nonumber \\
+				\delta&\leq-\degree{60}{}
+			\end{align}
+			ou seja: \textbf{Acrux ($\alpha$-Crucis) e  Rigelkent ($\alpha$-Centauri)}. 
+			\item A que tem o ângulo de declinação $\delta \backsimeq$ \degree{-30}{} é \textbf{Antares ($\alpha$-Escorpião)} ($\delta=$\degree{-26,5}{})
+			\item Pelo nome as que pertencem à alguma constelação do zodíaco são: \textbf{Rigelkent ($\alpha$-Centauri); Spica ($\alpha$-Virgem) e Antares ($\alpha$-Escorpião).}
+		\end{enumerate}
+	}
+\end{sol}
 %--------------| Q11 |---------------------------------------->
 \begin{prob}
 	Mostre que um dia sideral é aproximadamente $4min$ mais curto que o dia solar.
 \end{prob}
+
+\begin{sol}
+	\textcolor{teal} { 
+		O dia sideral é definido como duas passagens consecutivas do ponto vernal $\gamma$ pelo meridiano local. Por decorrência do movimento de translação da Terra em torno do Sol e da distância da Terra em relação ao Sol ser muito menor se comparado à distância da Terra ao primeiro ponto de Áries (ponto vernal - $\gamma$), a Terra percorre o equivalente a \degree{0,986}{} por dia a mais para se alinhar novamente ao Sol, completando assim o dia solar. Esta pequena diferença ângular transformada em horas resulta em
+		\begin{align}
+			\frac{\degree{360}{}}{\degree{0,986}{}}&=\frac{24h}{x}\nonumber \\
+			x&=\frac{\left(24h\right)\left(\degree{0,986}{}\right)}{\degree{360}{}}\nonumber \\
+			x&=0,065733\left(60min\right)\nonumber \\
+			x&=3,944min
+		\end{align}
+		e é o tempo necessário para a Terra completar um dia solar, após ter completado um dia sideal.
+	}
+\end{sol}
 %--------------| Q12 |---------------------------------------->
 \begin{prob}
 	A latitude em Montreal é $48^{\circ}N$
@@ -270,6 +330,19 @@
 		\end{enumerate}				
 	\end{enumerate}
 \end{prob}
+
+\begin{sol}
+	\textcolor{teal} {
+		\begin{enumerate}[label=\alph *)]
+			\item Se Montreal está a uma latitude $\phi=$\degree{48}{N}, o equador celeste está a \degree{42}{} acima do horizonte. No ponto máximo do verão no hemisfério Norte, o Sol está a uma distância ângular de \degree{+23,5}{} do equador celeste. Logo, sua altura máxima é de \degree{+65,5}{}
+			\begin{figure}[!h]
+				\begin{center}
+					\includegraphics[width=0.5\linewidth]{fig/fig-ex12a.png}
+				\end{center}
+			\end{figure}
+		\end{enumerate}
+	}
+\end{sol}
 %--------------| Q13 |---------------------------------------->
 \begin{prob}
 	Uma astro realiza, durante o período de um dia, duas passagens meridianas. Considere uma
