@@ -2,12 +2,15 @@
 	alf, 
 	versalete, 
 	abnt-emphasize = bf, 
-	abnt-etal-list = 3, 
+	abnt-etal-list = 2, 
 	abnt-etal-text = it, 
 	abnt-and-type = &, 
 	abnt-last-names = abnt,
-	abnt-repeated-author-omit = yes
-	]{abntex2cite}
+	abnt-repeated-author-omit = yes,
+	abnt-ldots-type = text,
+]{abntex2cite}
+
+
 
 %==========|CODIFICACAO|=================================================================>
 \usepackage{lmodern}	       			% usa a fonte Latin Modern
@@ -16,6 +19,7 @@
 \hyphenation{bi-blio-gra-fia}		% controla hifenação
 \usepackage{soul}					% for underlines
 \usepackage{epigraph}
+\usepackage{multicol}
 %==========|FIM-CODIFICACAO|=============================================================>
 
 %==========|MATEMATICO|==================================================================>
@@ -57,8 +61,8 @@
      	%pagebackref=true,
 		colorlinks=true,       		% false: boxed links; true: colored links
     	linkcolor=blue,          	% color of internal links
-    	citecolor=black,        		% color of links to bibliography
-    	filecolor=magenta,      		% color of file links
+    	citecolor=magenta,        		% color of links to bibliography
+    	filecolor=blue,      		% color of file links
 		urlcolor=blue,
 		bookmarksdepth=4
 }
