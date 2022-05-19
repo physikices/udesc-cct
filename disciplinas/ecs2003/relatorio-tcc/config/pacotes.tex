@@ -29,18 +29,28 @@
 
 %----------|Cores|=======================================================================>
 \usepackage{color}				    % controle de cores
-\usepackage[table]{xcolor}			% tabelas coloridas
+%\usepackage[table]{xcolor}			% tabelas coloridas
 
 \definecolor{color_200_200_200}{RGB}{200,200,200}
 \definecolor{blue}{RGB}{41,5,195}
 %==========|FIM-GRAFICOS|================================================================>
+
+%==========|LETTRINE|====================================================================>
+\usepackage{lettrine}
+\usepackage{GoudyIn}
+%\usepackage{erewhon}				% ornamento da primeira letra de um parágrafo
+\usepackage[x11names]{xcolor} 
+\renewcommand{\LettrineFontHook}{\color{VioletRed4}\GoudyInfamily{}}
+%\LettrineTextFont{\itshape}
+\setcounter{DefaultLines}{3}
+%==========|END-LETTRINE|================================================================>
 
 %==========|PDF|=========================================================================>
 \usepackage{lastpage}			    % usado pela Ficha catalográfica
 %\usepackage{indentfirst}			% indenta o primeiro parágrafo de cada seção.
 \usepackage{microtype} 			    % para melhorias de justificação
 \usepackage{fancyhdr}				% cabeçalhos
-\usepackage{lettrine}				% ornamento da primeira letra de um parágrafo
+\setlength{\headheight}{15.35403pt}
 \usepackage{lscape}					% altera a orientação da saida PDF
 %\usepackage{pdflscape}				% altera a orientação da saida PDF
 \usepackage{setspace}
@@ -49,6 +59,7 @@
 \usepackage{booktabs, multirow} 		% for borders and merged ranges|e estrutura multicoluna
 \usepackage{lipsum}					% gerador de textos (dummy)
 \usepackage{ragged2e}
+
 %==========|FIM-PDF|=====================================================================>
 
 %==========|BIBLIOGRAFIA|================================================================>
@@ -57,9 +68,14 @@
      	%pagebackref=true,
 		colorlinks=true,       		% false: boxed links; true: colored links
     	linkcolor=blue,          	% color of internal links
-    	citecolor=black,        		% color of links to bibliography
+    	citecolor=red,        		% color of links to bibliography
     	filecolor=magenta,      		% color of file links
 		urlcolor=blue,
+		%==========|meta dados-pdf|===============================================>
+		pdfauthor={Rodrigo Nascimento},
+		pdftitle={Relatório de Estágio Curricular II},
+		pdfsubject={Ensino de Física},
+		pdfkeywords={Estágio Supervisionado; Ensino Médio; Física.},
 		bookmarksdepth=4
 }
 % \usepackage{todonotes}
